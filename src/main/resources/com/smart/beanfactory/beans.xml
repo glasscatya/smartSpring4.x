@@ -4,11 +4,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
-<bean id="car" class="com.smart.context.Car"
+<bean id="car" class="com.smart.Car"
       init-method="myInit"
       destroy-method="destroy"
       p:brand="特斯拉"
       p:color="黑色，但也不一定"
       p:maxSpeed="199" />
+
+    <!--ApplicationContext会自动注册这些后处理器-->
+    <bean id="myBeanFactoryPostProcessor"
+          class="com.smart.context.MyBeanFactoryPostProcessor"/>
+
+    <bean id="myBeanPostProcessor"
+          class="com.smart.beanfactory.MyBeanPostProcessor"/>
 
 </beans>

@@ -1,9 +1,8 @@
 package com.smart.beanfactory;
 
-import com.smart.context.Car;
+import com.smart.Car;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.core.annotation.Order;
 
 //属性注入后调用
 public class MyBeanPostProcessor implements BeanPostProcessor {

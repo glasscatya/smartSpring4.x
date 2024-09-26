@@ -1,4 +1,4 @@
-package com.smart.context;
+package com.smart;
 
 import org.springframework.beans.factory.*;
 
@@ -38,7 +38,7 @@ public class Car implements BeanFactoryAware, BeanNameAware, InitializingBean,
     //<bean>
     public void myInit() {
         System.out.println("调用init-method所指定的myInit()");
-        this.maxSpeed = 240;
+        this.maxSpeed = 9999;
     }
 
     //<

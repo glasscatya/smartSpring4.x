@@ -1,15 +1,13 @@
 package com.smart.beanfactory;
 
-import com.smart.context.Car;
+import com.smart.Car;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.core.annotation.Order;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.testng.annotations.Test;
 
 public class BeanLifeCycle {
     private static void LifeCycleInBeanFactory() {
